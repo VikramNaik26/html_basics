@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--This href is relative reference link -->
+    <title>Text Basics</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hello World</h1>
+      <!--<nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">Primary Navigation</h2>-->
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+            <!-- These href are the internal links withhin the page-->
+          </li>
+          <li>
+            <a href="#contact">Contact us</a>
+            <!-- These href are the internal links withhin the page-->
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+    <main>
+      <article id="html">
+        <h2>Iam ready to learn HTML</h2>
+        <p>This is my first web page</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="images/htmlicon.png"
+            alt="HTML5 logo"
+            title="Iam learning HTML5"
+            width="300"
+            height="300"
+            class="figure-img-html-icon"
+          />
+          <figure>
+            <figcaption>An example of an HTML5 code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+
+        <!-- <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">Primary Navigation</h2>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav> -->
+
+        <section>
+          <h3>My daily Schedule</h3>
+          <p>let me tell you how:</p>
+          <ol>
+            <li>I started to learn more about web dev</li>
+            <li>I plan out my Schedule.</li>
+            <li>
+              I use resource from
+              <abbr title="Mozilla Developers Network"
+                ><a href="https://developer.mozilla.org/">MDN</a></abbr
+              >
+            </li>
+            <!-- This href is the absolute reference link-->
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning
+                <!-- PT3H is Duration attribute-->
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!--<th id="morning" scope="row">Morning</th>
+                            <td headers="time morning">
+                                <time datetime="08:00">8am</time>
+                                <time datetime="11:00">11am</time>
+                            </td>
+                            <td>Write Code</td>
+                            this is optional to add id and header or it is a alternative for scope-->
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>
+                  <time datetime="11:00">11am</time>
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th>Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>
+                  <time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>
+                  <time datetime="15:00">3pm</time>
+                </td>
+                <td>Study for other courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other time</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what i do every day ,5 days a week. Just eat,
+                  sleep, code.. and recharge
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+
+        <!--<p>let me tell you how:
+                <br>&nbsp;&nbsp;&nbsp;...I started to learn more about web dev 
+                <br>&nbsp;&nbsp;&nbsp;...I plan out my Schedule. 
+                <br>&nbsp;&nbsp;&nbsp;...I use resource from <abbr title="Mozilla Developers Network">MDN</abbr>
+                <abbr> tag provides a symantic meaning that the text is an abbrivation and title is a attribute that defines the abbrivation
+                &nbsp is html entity which is use to provide space
+            </p>-->
+      </article>
+      <hr />
+
+      <article id="vacation">
+        <h2>Also planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a gateway</em></p>
+        <!-- <em> tag give a symantic meaning "emphasized" and italizes the text-->
+        <p>I lived in Mangalore</p>
+
+        <section>
+          <h3>Places i would like to visit</h3>
+          <ul>
+            <li><p>I've been heard good things about Munnar</p></li>
+            <figure>
+              <img
+                src="images/munnar.jpg"
+                alt="Munnar"
+                title="I want visit munnar"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <figcaption>Munnar</figcaption>
+            </figure>
+            <!-- loading="lazy" loads the image late and loading is default eager -->
+            <li>
+              <p>I heard good things about going here:</p>
+              <address>
+                Margaritavilla Island Reserve Cancun<br />
+                Mexico 77508
+              </address>
+              <figure>
+                <img
+                  src="images/carabian.jfif"
+                  alt="cancun vacation image"
+                  title="It's 5 o'clock Somewhere"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+                <figcaption>Carabian beach</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- This tells the broswer that this is the address and even Italizes it -->
+
+        <section>
+          <h3>Places i want to avoid</h3>
+          <p>Anywhere Cold... <strong>way</strong></p>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>Cold</strong></dd>
+            <dt>South Pole</dt>
+            <dd>This is also Cold</dd>
+            <dt>Mountain tops</dt>
+            <dd>These are also Cold</dd>
+          </dl>
+          <!-- <dl> stands for description list and had 2 sub tags <dt>(desc term) and <dd>(disc detail)-->
+          <!-- <strong> bolds the text-->
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>I'd really like to hear from you</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              <label for="firstName">First Name: </label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Vikram"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <!-- autocomplete will remember the previous input-->
+            <!-- requires attribute will make this form element a manditory one to fill -->
+            <!-- autofocus attribute will focus on that form element when website is reloaded-->
+            <p>
+              <label for="lastName">Last Name: </label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Naik"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password: </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="your secret"
+                required
+              />
+            </p>
+            <p>
+              <label for="phoneNumber">Phone Number: </label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="+916363348212"
+                pattern="\+[0-9]{2}[0-9]{10}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">Favorite decade: </label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1980"
+                required
+              />
+            </p>
+            <p>
+              <label for="coffee">Favorite coffee: </label>
+              <select name="coffee" id="coffee" multiple size="5">
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular Coffee</option>
+                  <option value="iced coffee">Iced cpffee</option>
+                </optgroup>
+                <optgroup label="Espresso drinks">
+                  <option value="latte" selected>Latte</option>
+                  <!-- selected attribute is used to latte as default value-->
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+              <!-- multiple attribute is is select multiple elements and size will tell how many display in web page-->
+            </p>
+            <!-- another way to create a select element -->
+            <!-- <p>
+                        <label for="coffee">Favorite coffee</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="coffee">
+                                <option value="latte">
+                                <option value="esoresso">
+                                <option value="cortado">
+                                <option value="americano">
+                                <option value="other">
+                            </datalist>
+                        </input>
+                    </p> -->
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>What is your favorite food</legend>
+            <p>
+              <input type="radio" id="tacos" name="food" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" id="pizza" name="food" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" id="other" name="food" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherPet"
+                value="otherPet"
+              />
+              <label for="otherPet">Other</label>
+            </p>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Send me a Note</legend>
+            <label for="message">Your message: </label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="type your message here"
+            ></textarea>
+
+            <!-- <label for="dob">Date of Birth</label>
+					<input type="date" id="dob" name="dob" required>
+                    <label for="email">Email Id</label><br/>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    <label for="myfile">Upload your Resume:</label>
+					<input type="file" class="upload-button" id="myfile" name="myfile">
+                        These are some of the other input types
+                -->
+          </fieldset>
+          <br />
+          <!-- <input type="button" value=""> 
+                this is another way to create submit button-->
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            SubmitPost
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+        <!-- method can be either get or post-->
+      </article>
+    </main>
+
+    <!--<Marquee>This a Sliding Text</Marquee>-->
+    <hr />
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Vikram Naik </a>&gt;&gt;&gt;
+        <!-- These are also the html entity -->
+      </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+    some of the other usefull html tags which are not symantic
+    <div></div>
+    <span></span>
+-->
